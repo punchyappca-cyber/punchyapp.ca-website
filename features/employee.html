@@ -6,12 +6,12 @@
     <title>For Staff | Punchy</title>
     <link rel="stylesheet" href="../main.css">
     <style>
-        .feature-hero { padding: calc(var(--space-xl) + 20px) 0 var(--space-lg); background: radial-gradient(circle at top right, rgba(16, 185, 129, 0.12), transparent); }
+        .feature-hero { padding: calc(var(--space-xl) + 20px) 0 var(--space-lg); background: radial-gradient(circle at top right, rgba(59, 130, 246, 0.12), transparent); }
         .feature-hero h1 { font-size: 56px; margin-bottom: 24px; }
         .back-link { display: inline-flex; align-items: center; gap: 8px; color: var(--primary); text-decoration: none; font-weight: 700; margin-bottom: 32px; text-transform: uppercase; letter-spacing: 1px; font-size: 14px; }
         .grid-detail { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; margin-bottom: var(--space-xl); align-items: center; }
         .step-card { background: var(--surface); padding: 32px; border-radius: 24px; border: 1px solid var(--border); margin-bottom: 24px; }
-        .step-num { width: 40px; height: 40px; background: var(--accent); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 900; margin-bottom: 16px; color: #fff; }
+        .step-num { width: 40px; height: 40px; background: #3B82F6; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 900; margin-bottom: 16px; color: #fff; }
         .section-title { font-size: 32px; margin-bottom: 12px; }
         .role-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-top: 40px; }
         @media (max-width: 900px) { .grid-detail, .role-grid { grid-template-columns: 1fr; } }
@@ -38,9 +38,9 @@
         <div class="container">
             <a href="../index.html" class="back-link">&larr; Back to Home</a>
             <div class="tag">For Every Employee</div>
-            <h1>Your schedule, your hours, <br>your paystubs — in your pocket</h1>
+            <h1>Your schedule, your hours, <br>your paystubs - in your pocket</h1>
             <p style="font-size: 20px; max-width: 760px; color: var(--text-muted);">
-                Employees don't sign themselves up — they're invited by an Admin. From there, everything about their work day lives in one app instead of a shared spreadsheet and a paper time sheet.
+                Employees don't sign themselves up - they're invited by an Admin. From there, everything about their work day lives in one app instead of a shared spreadsheet and a paper time sheet.
             </p>
         </div>
     </section>
@@ -50,26 +50,55 @@
             <div class="grid-detail">
                 <div>
                     <h2 class="section-title">Clocking In, Your Way</h2>
-                    <p>No dedicated hardware to buy per employee — clock in with what's already at the door, or from your own phone.</p>
+                    <p>No dedicated hardware to buy per employee - clock in with what's already at the door, or from your own phone.</p>
                     <div class="step-card">
                         <div class="step-num">1</div>
                         <h3>Scan the kiosk QR code</h3>
-                        <p>A shared tablet at the entrance displays a QR code — scan it with your phone to clock in or out, start a break, or end one.</p>
+                        <p>A shared tablet at the entrance displays a QR code - scan it with your phone to clock in or out, start a break, or end one.</p>
                     </div>
                     <div class="step-card">
                         <div class="step-num">2</div>
                         <h3>Face ID app unlock</h3>
-                        <p>Log back into the app quickly and securely with Face ID or fingerprint, instead of retyping a password every time.</p>
+                        <p>Log back into the app quickly and securely with Face ID or fingerprint, instead of retyping a password every time - offered automatically the first time your device supports it.</p>
                     </div>
                 </div>
-                <div class="detail-img">
-                    <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&q=80&w=800" alt="Employee clocking in with phone">
+                <div class="detail-img mockup">
+                    <div class="mockup-card">
+                        <div class="mockup-header">
+                            <span class="mockup-title">Good Morning, Sarah</span>
+                            <div class="mockup-dots"><span></span><span></span><span></span></div>
+                        </div>
+                        <div class="mockup-row" style="background:var(--accent-soft);">
+                            <span class="who" style="color:var(--accent);">Clocked in at 8:58 AM</span>
+                            <span class="mockup-pill green">Downtown Cafe</span>
+                        </div>
+                        <div class="mockup-stat-row">
+                            <div class="mockup-stat">
+                                <div class="num">96%</div>
+                                <div class="label">Reliability</div>
+                            </div>
+                            <div class="mockup-stat">
+                                <div class="num">32.5</div>
+                                <div class="label">Hours This Period</div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
 
             <div class="grid-detail" style="margin-top:80px;">
-                <div class="detail-img" style="order:2;">
-                    <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&q=80&w=800" alt="Employee reviewing schedule">
+                <div class="detail-img mockup" style="order:2;">
+                    <div class="mockup-card">
+                        <div class="mockup-header">
+                            <span class="mockup-title">You Missed a Clock-Out</span>
+                            <div class="mockup-dots"><span></span><span></span><span></span></div>
+                        </div>
+                        <div class="mockup-row" style="background:rgba(245,158,11,0.12);">
+                            <span class="who" style="color:var(--warn);">Aug 3 shift - no clock-out found</span>
+                        </div>
+                        <div class="mockup-progress"><i style="width:35%; background:var(--warn)"></i></div>
+                        <div class="mockup-title" style="text-transform:none; letter-spacing:0;">Tap to report when you actually left</div>
+                    </div>
                 </div>
                 <div style="order:1;">
                     <h2 class="section-title">Forgot to Clock Out?</h2>
@@ -77,12 +106,12 @@
                     <div class="step-card">
                         <div class="step-num">1</div>
                         <h3>Report it yourself</h3>
-                        <p>The app detects a shift that's drifted well past its scheduled end and asks you to enter the time you actually left, with an optional note.</p>
+                        <p>The app detects a shift that's drifted well past its scheduled end and asks you to enter the time you actually left, with an optional note for context.</p>
                     </div>
                     <div class="step-card">
                         <div class="step-num">2</div>
                         <h3>Reviewed, not assumed</h3>
-                        <p>Your submission goes to an Admin, Manager, or Accounting for approval — you're notified the moment it's decided.</p>
+                        <p>Your submission goes to an Admin, Manager, or Accounting for approval - you're notified the moment it's decided, whether approved or sent back.</p>
                     </div>
                 </div>
             </div>
@@ -99,11 +128,41 @@
                     <div class="step-card">
                         <div class="step-num">2</div>
                         <h3>Paystubs &amp; personal attendance</h3>
-                        <p>View past paystubs, and see your own reliability score and early/late/missed counts — a personal view, never a leaderboard against coworkers.</p>
+                        <p>View past paystubs, and see your own reliability score and early/late/missed counts - a personal view, never a leaderboard against coworkers.</p>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-num">3</div>
+                        <h3>Upcoming pay estimate</h3>
+                        <p>See an estimate of your current pay period's hours and gross pay before it's even submitted for approval.</p>
                     </div>
                 </div>
-                <div class="detail-img">
-                    <img src="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&q=80&w=800" alt="Employee payroll view">
+                <div class="detail-img mockup">
+                    <div class="mockup-card">
+                        <div class="mockup-header">
+                            <span class="mockup-title">My Attendance</span>
+                            <div class="mockup-dots"><span></span><span></span><span></span></div>
+                        </div>
+                        <div class="mockup-stat-row">
+                            <div class="mockup-stat">
+                                <div class="num">96%</div>
+                                <div class="label">Reliability</div>
+                            </div>
+                        </div>
+                        <div class="mockup-rows">
+                            <div class="mockup-row">
+                                <span class="who">Early</span>
+                                <span class="mockup-pill blue">4</span>
+                            </div>
+                            <div class="mockup-row">
+                                <span class="who">Late</span>
+                                <span class="mockup-pill amber">1</span>
+                            </div>
+                            <div class="mockup-row">
+                                <span class="who">Missed</span>
+                                <span class="mockup-pill red">0</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -126,7 +185,19 @@
                 </div>
                 <div class="step-card">
                     <h3>Profile Photo</h3>
-                    <p>Add a photo that shows up wherever your name does — schedules, staff directory, approvals — compressed automatically to keep things fast.</p>
+                    <p>Add a photo that shows up wherever your name does - schedules, staff directory, approvals - compressed automatically to keep things fast.</p>
+                </div>
+                <div class="step-card">
+                    <h3>Notifications</h3>
+                    <p>Know the moment a leave request is decided, a schedule is published, or your missed clock-out gets reviewed.</p>
+                </div>
+                <div class="step-card">
+                    <h3>Security &amp; PIN</h3>
+                    <p>View and manage your kiosk access credentials, and change your PIN whenever you need to.</p>
+                </div>
+                <div class="step-card">
+                    <h3>Holiday Awareness</h3>
+                    <p>See upcoming statutory and administrative closures for your locations before they catch you by surprise.</p>
                 </div>
             </div>
         </div>

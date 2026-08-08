@@ -6,12 +6,12 @@
     <title>Locations | Punchy</title>
     <link rel="stylesheet" href="../main.css">
     <style>
-        .feature-hero { padding: calc(var(--space-xl) + 20px) 0 var(--space-lg); background: radial-gradient(circle at top right, rgba(79, 70, 229, 0.12), transparent); }
+        .feature-hero { padding: calc(var(--space-xl) + 20px) 0 var(--space-lg); background: radial-gradient(circle at top right, rgba(6, 182, 212, 0.12), transparent); }
         .feature-hero h1 { font-size: 56px; margin-bottom: 24px; }
         .back-link { display: inline-flex; align-items: center; gap: 8px; color: var(--primary); text-decoration: none; font-weight: 700; margin-bottom: 32px; text-transform: uppercase; letter-spacing: 1px; font-size: 14px; }
         .grid-detail { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; margin-bottom: var(--space-xl); align-items: center; }
         .step-card { background: var(--surface); padding: 32px; border-radius: 24px; border: 1px solid var(--border); margin-bottom: 24px; }
-        .step-num { width: 40px; height: 40px; background: var(--primary); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 900; margin-bottom: 16px; color: #fff; }
+        .step-num { width: 40px; height: 40px; background: #06B6D4; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 900; margin-bottom: 16px; color: #fff; }
         .section-title { font-size: 32px; margin-bottom: 12px; }
         .role-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-top: 40px; }
         @media (max-width: 900px) { .grid-detail, .role-grid { grid-template-columns: 1fr; } }
@@ -40,7 +40,7 @@
             <div class="tag">Multi-Location From Day One</div>
             <h1>Every location, <br>its own rules</h1>
             <p style="font-size: 20px; max-width: 760px; color: var(--text-muted);">
-                A downtown café and a warehouse across town don't run on the same hours or the same payroll policy. Punchy treats every business location as its own configuration, under one company.
+                A downtown cafe and a warehouse across town don't run on the same hours or the same payroll policy. Punchy treats every business location as its own configuration, under one company.
             </p>
         </div>
     </section>
@@ -54,12 +54,12 @@
                     <div class="step-card">
                         <div class="step-num">1</div>
                         <h3>Hours &amp; break policy</h3>
-                        <p>Working hours and whether break tracking is required are set per location, not forced company-wide.</p>
+                        <p>Working hours are set per day of week, and whether break tracking is required is set per location, not forced company-wide - a warehouse might require it while a small kiosk doesn't.</p>
                     </div>
                     <div class="step-card">
                         <div class="step-num">2</div>
                         <h3>Holiday closures</h3>
-                        <p>Mark statutory holidays and one-off administrative closures — schedules and statutory holiday pay reflect them automatically.</p>
+                        <p>Mark statutory holidays and one-off administrative closures - schedules and statutory holiday pay reflect them automatically, using a configurable rule (none, percentage, or standard-average).</p>
                     </div>
                     <div class="step-card">
                         <div class="step-num">3</div>
@@ -67,14 +67,52 @@
                         <p>Choose whether vacation pay is added to every paycheque, or banked and paid out to staff on request.</p>
                     </div>
                 </div>
-                <div class="detail-img">
-                    <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=800" alt="Multiple business locations">
+                <div class="detail-img mockup">
+                    <div class="mockup-card">
+                        <div class="mockup-header">
+                            <span class="mockup-title">Downtown Cafe - Settings</span>
+                            <div class="mockup-dots"><span></span><span></span><span></span></div>
+                        </div>
+                        <div class="mockup-rows">
+                            <div class="mockup-row">
+                                <span class="who">Break Tracking</span>
+                                <span class="mockup-pill green">Required</span>
+                            </div>
+                            <div class="mockup-row">
+                                <span class="who">Vacation Pay</span>
+                                <span class="mockup-pill blue">Each Cheque</span>
+                            </div>
+                            <div class="mockup-row">
+                                <span class="who">Next Closure</span>
+                                <span class="mockup-pill amber">Labour Day</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
 
             <div class="grid-detail" style="margin-top:80px;">
-                <div class="detail-img" style="order:2;">
-                    <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80&w=800" alt="Location scoped access">
+                <div class="detail-img mockup" style="order:2;">
+                    <div class="mockup-card">
+                        <div class="mockup-header">
+                            <span class="mockup-title">Your Access</span>
+                            <div class="mockup-dots"><span></span><span></span><span></span></div>
+                        </div>
+                        <div class="mockup-rows">
+                            <div class="mockup-row">
+                                <span class="who">Downtown Cafe</span>
+                                <span class="mockup-pill green">Full Access</span>
+                            </div>
+                            <div class="mockup-row">
+                                <span class="who">Warehouse North</span>
+                                <span class="mockup-pill green">Full Access</span>
+                            </div>
+                            <div class="mockup-row">
+                                <span class="who">Airport Kiosk</span>
+                                <span class="mockup-pill red">Not Assigned</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div style="order:1;">
                     <h2 class="section-title">Scoped Access, By Design</h2>
@@ -82,12 +120,51 @@
                     <div class="step-card">
                         <div class="step-num">1</div>
                         <h3>Admin sees everything</h3>
-                        <p>Every location, every employee, every payroll period — the full picture, always.</p>
+                        <p>Every location, every employee, every payroll period - the full picture, always.</p>
                     </div>
                     <div class="step-card">
                         <div class="step-num">2</div>
                         <h3>Managers &amp; Accounting see their assignment</h3>
-                        <p>A Manager assigned to two locations never sees a third they weren't given access to — same for invited Accounting staff.</p>
+                        <p>A Manager assigned to two locations never sees a third they weren't given access to - same for invited Accounting staff, enforced the same way at the data layer, not just hidden in the UI.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid-detail" style="margin-top:80px;">
+                <div>
+                    <h2 class="section-title">Comparing Performance Across Sites</h2>
+                    <p>Once you're running more than one location, comparing them matters.</p>
+                    <div class="step-card">
+                        <div class="step-num">1</div>
+                        <h3>Side-by-side comparison</h3>
+                        <p>Admins can compare attendance reliability and labor metrics across every location, spotting which site is running smoothly and which needs attention.</p>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-num">2</div>
+                        <h3>Location detail view</h3>
+                        <p>A tappable card showing the Admin, Manager, and Accounting contact for that location - reachable by call or directions, the same view Managers and Accounting see for their own assigned sites.</p>
+                    </div>
+                </div>
+                <div class="detail-img mockup">
+                    <div class="mockup-card">
+                        <div class="mockup-header">
+                            <span class="mockup-title">Location Comparison</span>
+                            <div class="mockup-dots"><span></span><span></span><span></span></div>
+                        </div>
+                        <div class="mockup-rows">
+                            <div class="mockup-row">
+                                <span class="who">Downtown Cafe</span>
+                                <span class="mockup-pill green">98% Reliable</span>
+                            </div>
+                            <div class="mockup-row">
+                                <span class="who">Warehouse North</span>
+                                <span class="mockup-pill amber">84% Reliable</span>
+                            </div>
+                            <div class="mockup-row">
+                                <span class="who">Airport Kiosk</span>
+                                <span class="mockup-pill green">95% Reliable</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -98,20 +175,20 @@
         <div class="container">
             <div class="section-header">
                 <div class="tag">Also Included</div>
-                <h2>Comparing performance across sites</h2>
+                <h2>Built for growing operations</h2>
             </div>
             <div class="role-grid">
                 <div class="step-card">
-                    <h3>Location Comparison</h3>
-                    <p>Admins can compare attendance reliability and labor metrics side-by-side across every location.</p>
-                </div>
-                <div class="step-card">
-                    <h3>Location Detail View</h3>
-                    <p>A tappable card showing the Admin, Manager, and Accounting contact for that location — reachable by call or directions.</p>
-                </div>
-                <div class="step-card">
                     <h3>Print-Ready Schedules</h3>
                     <p>Print a blank or filled A4 schedule for a specific location, ready to post physically on-site.</p>
+                </div>
+                <div class="step-card">
+                    <h3>Company Profile</h3>
+                    <p>Address, phone, fax, employer/business number, and a benefits catalog attached to the location.</p>
+                </div>
+                <div class="step-card">
+                    <h3>Tax Region Awareness</h3>
+                    <p>Set the province for each location so statutory deductions and holiday rules calculate correctly.</p>
                 </div>
             </div>
         </div>

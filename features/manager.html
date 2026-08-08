@@ -11,7 +11,7 @@
         .back-link { display: inline-flex; align-items: center; gap: 8px; color: var(--primary); text-decoration: none; font-weight: 700; margin-bottom: 32px; text-transform: uppercase; letter-spacing: 1px; font-size: 14px; }
         .grid-detail { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; margin-bottom: var(--space-xl); align-items: center; }
         .step-card { background: var(--surface); padding: 32px; border-radius: 24px; border: 1px solid var(--border); margin-bottom: 24px; }
-        .step-num { width: 40px; height: 40px; background: var(--accent); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 900; margin-bottom: 16px; }
+        .step-num { width: 40px; height: 40px; background: #10B981; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 900; margin-bottom: 16px; color: #fff; }
         .section-title { font-size: 32px; margin-bottom: 12px; }
         .role-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-top: 40px; }
         @media (max-width: 900px) { .grid-detail, .role-grid { grid-template-columns: 1fr; } }
@@ -40,7 +40,7 @@
             <div class="tag">Scoped to Your Locations</div>
             <h1>Everything for your location, <br>none of the noise</h1>
             <p style="font-size: 20px; max-width: 760px; color: var(--text-muted);">
-                A Manager only sees the locations an Admin has assigned them to — never the whole company. Inside that scope, they run the day-to-day: schedules, approvals, and payroll for their own team.
+                A Manager only sees the locations an Admin has assigned them to - never the whole company. Inside that scope, they run the day-to-day: schedules, approvals, and payroll for their own team.
             </p>
         </div>
     </section>
@@ -49,27 +49,75 @@
         <div class="container">
             <div class="grid-detail">
                 <div>
-                    <h2 class="section-title">Scheduling for Your Team</h2>
-                    <p>Build and adjust shifts for whichever locations you're assigned to, with an at-a-glance view of who's working today.</p>
+                    <h2 class="section-title">Today, At a Glance</h2>
+                    <p>The Manager dashboard opens on what's happening right now, not a menu of settings.</p>
                     <div class="step-card">
                         <div class="step-num">1</div>
-                        <h3>Today's Shifts, front and center</h3>
-                        <p>The Manager dashboard leads with today's activity — who's clocked in, who's upcoming, and how many shifts are scheduled across your locations.</p>
+                        <h3>Live shift status</h3>
+                        <p>Every shift today is shown with its real status - Completed, Clocked In, Not Clocked In, or Upcoming - color-coded, with the location name shown whenever a Manager covers more than one site.</p>
                     </div>
                     <div class="step-card">
                         <div class="step-num">2</div>
-                        <h3>Copy schedules forward</h3>
-                        <p>Reuse last period's schedule instead of rebuilding it, with the same print-to-PDF option Admins have for physical posting.</p>
+                        <h3>Build &amp; copy schedules</h3>
+                        <p>Create shifts for your assigned locations and copy an entire pay period forward, with the same print-to-PDF option Admins have for physical posting.</p>
                     </div>
                 </div>
-                <div class="detail-img">
-                    <img src="https://images.unsplash.com/photo-1531973576160-7125cd663d86?auto=format&fit=crop&q=80&w=800" alt="Manager schedule view">
+                <div class="detail-img mockup">
+                    <div class="mockup-card">
+                        <div class="mockup-header">
+                            <span class="mockup-title">Today's Shifts</span>
+                            <div class="mockup-dots"><span></span><span></span><span></span></div>
+                        </div>
+                        <div class="mockup-rows">
+                            <div class="mockup-row">
+                                <span class="who">9:00 AM - Sarah C.</span>
+                                <span class="mockup-pill green">Clocked In</span>
+                            </div>
+                            <div class="mockup-row">
+                                <span class="who">10:00 AM - Marcus L.</span>
+                                <span class="mockup-pill blue">Upcoming</span>
+                            </div>
+                            <div class="mockup-row">
+                                <span class="who">8:00 AM - Dana F.</span>
+                                <span class="mockup-pill amber">Not Clocked In</span>
+                            </div>
+                        </div>
+                        <div class="mockup-stat-row">
+                            <div class="mockup-stat">
+                                <div class="num">6</div>
+                                <div class="label">Active Shifts</div>
+                            </div>
+                            <div class="mockup-stat">
+                                <div class="num">14</div>
+                                <div class="label">Today Total</div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
 
             <div class="grid-detail" style="margin-top:80px;">
-                <div class="detail-img" style="order:2;">
-                    <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=80&w=800" alt="Approving requests">
+                <div class="detail-img mockup" style="order:2;">
+                    <div class="mockup-card">
+                        <div class="mockup-header">
+                            <span class="mockup-title">Requests</span>
+                            <div class="mockup-dots"><span></span><span></span><span></span></div>
+                        </div>
+                        <div class="mockup-rows">
+                            <div class="mockup-row">
+                                <span class="who">Dana F. - Leave, Aug 20</span>
+                                <span class="mockup-pill green">Approved</span>
+                            </div>
+                            <div class="mockup-row">
+                                <span class="who">Marcus L. - WFH, Aug 22</span>
+                                <span class="mockup-pill amber">Pending</span>
+                            </div>
+                            <div class="mockup-row">
+                                <span class="who">Sarah C. - Missed clock-out</span>
+                                <span class="mockup-pill red">Review</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div style="order:1;">
                     <h2 class="section-title">Approvals, One Tap</h2>
@@ -77,12 +125,12 @@
                     <div class="step-card">
                         <div class="step-num">1</div>
                         <h3>Leave &amp; WFH</h3>
-                        <p>Every request is pre-checked for conflicts against shifts and other approved time off — Approve or Reject with one tap, and the employee is notified instantly.</p>
+                        <p>Every request is pre-checked for conflicts against shifts and other approved time off - Approve or Reject with one tap, with a confirmation snackbar and an instant notification sent to the employee.</p>
                     </div>
                     <div class="step-card">
                         <div class="step-num">2</div>
                         <h3>Missed clock-out review</h3>
-                        <p>When permitted, review a staff member's self-reported "I actually left at..." submission and approve or reject it — nothing gets silently marked as clocked out on their behalf.</p>
+                        <p>When your Admin grants the permission, review a staff member's self-reported "I actually left at..." submission and approve or reject it - nothing gets silently marked as clocked out on their behalf.</p>
                     </div>
                 </div>
             </div>
@@ -94,16 +142,33 @@
                     <div class="step-card">
                         <div class="step-num">1</div>
                         <h3>Submit for cross-check</h3>
-                        <p>Review calculated pay per employee, then submit the whole period to Accounting for approval — with permission-gated shift-approval as a step before submission.</p>
+                        <p>Review calculated pay per employee, then submit the whole period to Accounting for approval - with permission-gated shift-approval as a step before submission, and clear metric tiles for the totals.</p>
                     </div>
                     <div class="step-card">
                         <div class="step-num">2</div>
-                        <h3>Attendance insight for your team</h3>
-                        <p>The same reliability scoring and incident feed Admins see, scoped to just the employees and locations you manage.</p>
+                        <h3>Period navigation</h3>
+                        <p>Step back and forward between pay periods to review history without waiting on a report export.</p>
                     </div>
                 </div>
-                <div class="detail-img">
-                    <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&q=80&w=800" alt="Payroll submission review">
+                <div class="detail-img mockup">
+                    <div class="mockup-card">
+                        <div class="mockup-header">
+                            <span class="mockup-title">Payroll - Aug 1-14</span>
+                            <div class="mockup-dots"><span></span><span></span><span></span></div>
+                        </div>
+                        <div class="mockup-stat-row">
+                            <div class="mockup-stat">
+                                <div class="num">$18,240</div>
+                                <div class="label">Gross Pay</div>
+                            </div>
+                            <div class="mockup-stat">
+                                <div class="num">12</div>
+                                <div class="label">Employees</div>
+                            </div>
+                        </div>
+                        <div class="mockup-progress"><i style="width:100%; background:var(--accent)"></i></div>
+                        <div class="mockup-title" style="text-transform:none; letter-spacing:0;">All shifts approved - ready to submit</div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -118,7 +183,7 @@
             <div class="role-grid">
                 <div class="step-card">
                     <h3>Staff Directory (Scoped)</h3>
-                    <p>Every employee at your assigned locations — contact info, status, and quick access to their schedule and payroll history.</p>
+                    <p>Every employee at your assigned locations - contact info, status, and quick access to their schedule and payroll history.</p>
                 </div>
                 <div class="step-card">
                     <h3>Location Details</h3>
@@ -127,6 +192,18 @@
                 <div class="step-card">
                     <h3>Open Shifts</h3>
                     <p>See every forgotten clock-out across your locations and either force-close it or wait on the employee's own submission.</p>
+                </div>
+                <div class="step-card">
+                    <h3>Attendance Insight</h3>
+                    <p>The same reliability scoring and incident feed Admins see, scoped to just the employees and locations you manage.</p>
+                </div>
+                <div class="step-card">
+                    <h3>Notifications</h3>
+                    <p>Recent leave and WFH activity surfaces right on your dashboard, not just buried in a notification list.</p>
+                </div>
+                <div class="step-card">
+                    <h3>No Distractions</h3>
+                    <p>No billing, no company-wide settings, no access to locations outside your assignment - the dashboard only shows what's relevant to you.</p>
                 </div>
             </div>
         </div>

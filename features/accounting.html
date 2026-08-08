@@ -11,7 +11,7 @@
         .back-link { display: inline-flex; align-items: center; gap: 8px; color: var(--primary); text-decoration: none; font-weight: 700; margin-bottom: 32px; text-transform: uppercase; letter-spacing: 1px; font-size: 14px; }
         .grid-detail { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; margin-bottom: var(--space-xl); align-items: center; }
         .step-card { background: var(--surface); padding: 32px; border-radius: 24px; border: 1px solid var(--border); margin-bottom: 24px; }
-        .step-num { width: 40px; height: 40px; background: #8B5CF6; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 900; margin-bottom: 16px; }
+        .step-num { width: 40px; height: 40px; background: #8B5CF6; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 900; margin-bottom: 16px; color: #fff; }
         .section-title { font-size: 32px; margin-bottom: 12px; }
         .role-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-top: 40px; }
         @media (max-width: 900px) { .grid-detail, .role-grid { grid-template-columns: 1fr; } }
@@ -40,7 +40,7 @@
             <div class="tag">Invited by an Admin</div>
             <h1>Cross-check payroll <br>before it's final</h1>
             <p style="font-size: 20px; max-width: 760px; color: var(--text-muted);">
-                Accounting isn't a self-service signup — an Admin invites accounting staff and grants exactly the permissions they need, scoped to specific company locations. Their job: verify the numbers before anyone gets paid.
+                Accounting isn't a self-service signup - an Admin invites accounting staff and grants exactly the permissions they need, scoped to specific company locations. Their job: verify the numbers before anyone gets paid.
             </p>
         </div>
     </section>
@@ -54,35 +54,84 @@
                     <div class="step-card">
                         <div class="step-num">1</div>
                         <h3>Company-scoped</h3>
-                        <p>Access is limited to the specific companies/locations an Admin grants — never the whole platform.</p>
+                        <p>Access is limited to the specific companies/locations an Admin grants - never the whole platform, and never another Admin's business.</p>
                     </div>
                     <div class="step-card">
                         <div class="step-num">2</div>
                         <h3>Permission by permission</h3>
-                        <p>Approve payroll, manage staff, view leave/WFH — each is its own toggle, so an Admin can grant exactly as much access as the role needs.</p>
+                        <p>Approve payroll, manage staff, view leave/WFH - each is its own toggle, so an Admin can grant exactly as much access as the role needs, and nothing else.</p>
                     </div>
                 </div>
-                <div class="detail-img">
-                    <img src="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&q=80&w=800" alt="Accounting review">
+                <div class="detail-img mockup">
+                    <div class="mockup-card">
+                        <div class="mockup-header">
+                            <span class="mockup-title">Permissions</span>
+                            <div class="mockup-dots"><span></span><span></span><span></span></div>
+                        </div>
+                        <div class="mockup-rows">
+                            <div class="mockup-row">
+                                <span class="who">Approve Payroll</span>
+                                <span class="mockup-pill green">On</span>
+                            </div>
+                            <div class="mockup-row">
+                                <span class="who">Manage Staff</span>
+                                <span class="mockup-pill red">Off</span>
+                            </div>
+                            <div class="mockup-row">
+                                <span class="who">View Leave/WFH</span>
+                                <span class="mockup-pill green">On</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
 
             <div class="grid-detail" style="margin-top:80px;">
-                <div class="detail-img" style="order:2;">
-                    <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&q=80&w=800" alt="Payroll approval">
+                <div class="detail-img mockup" style="order:2;">
+                    <div class="mockup-card">
+                        <div class="mockup-header">
+                            <span class="mockup-title">Payroll Queue</span>
+                            <div class="mockup-dots"><span></span><span></span><span></span></div>
+                        </div>
+                        <div class="mockup-rows">
+                            <div class="mockup-row">
+                                <span class="who">Downtown Cafe - Aug 1-14</span>
+                                <span class="mockup-pill amber">Submitted</span>
+                            </div>
+                            <div class="mockup-row">
+                                <span class="who">Warehouse North - Jul 18-31</span>
+                                <span class="mockup-pill green">Approved</span>
+                            </div>
+                        </div>
+                        <div class="mockup-stat-row">
+                            <div class="mockup-stat">
+                                <div class="num">2</div>
+                                <div class="label">Awaiting Review</div>
+                            </div>
+                            <div class="mockup-stat">
+                                <div class="num">$46,120</div>
+                                <div class="label">Approved MTD</div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div style="order:1;">
                     <h2 class="section-title">The Payroll Review Chain</h2>
-                    <p>Payroll never goes straight from a Manager's submission to a paycheck — Accounting is the verification step in between.</p>
+                    <p>Payroll never goes straight from a Manager's submission to a paycheck - Accounting is the verification step in between.</p>
                     <div class="step-card">
                         <div class="step-num">1</div>
                         <h3>Cross-check submitted periods</h3>
-                        <p>Review what a Manager submitted against actual clock data before approving — amendments are tracked separately from the original approval.</p>
+                        <p>Review what a Manager submitted against actual clock data before approving - a full breakdown of work and break segments per employee, not just a total.</p>
                     </div>
                     <div class="step-card">
                         <div class="step-num">2</div>
+                        <h3>Amend after the fact</h3>
+                        <p>Something needs correcting after approval? Amendments are tracked separately from the original approval, so there's always a clear before-and-after.</p>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-num">3</div>
                         <h3>Generate paystubs</h3>
-                        <p>Once approved, a paystub snapshot is generated per employee for that pay period — a permanent record, not a live document that can drift.</p>
+                        <p>Once approved, a paystub snapshot is generated per employee for that pay period - a permanent PDF record, exportable and shareable, not a live document that can drift.</p>
                     </div>
                 </div>
             </div>
@@ -94,16 +143,32 @@
                     <div class="step-card">
                         <div class="step-num">1</div>
                         <h3>Encrypted payroll identifiers</h3>
-                        <p>A Social Insurance Number is encrypted before it's ever stored — only authorized Accounting and Admin users can decrypt it, and only for payroll processing.</p>
+                        <p>A Social Insurance Number is encrypted before it's ever stored - only authorized Accounting and Admin users can decrypt it, and only for payroll processing.</p>
                     </div>
                     <div class="step-card">
                         <div class="step-num">2</div>
                         <h3>Vacation pay &amp; payouts</h3>
-                        <p>Whether a location pays vacation pay out each cheque or banks it, Accounting handles the payout requests for banked balances.</p>
+                        <p>Whether a location pays vacation pay out each cheque or banks it, Accounting handles the payout requests for banked balances when staff ask to cash them out.</p>
                     </div>
                 </div>
-                <div class="detail-img">
-                    <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&q=80&w=800" alt="Data security">
+                <div class="detail-img mockup">
+                    <div class="mockup-card">
+                        <div class="mockup-header">
+                            <span class="mockup-title">Payroll ID - Sarah C.</span>
+                            <div class="mockup-dots"><span></span><span></span><span></span></div>
+                        </div>
+                        <div class="mockup-rows">
+                            <div class="mockup-row">
+                                <span class="who">SIN</span>
+                                <span class="mockup-pill blue">**** *** 219</span>
+                            </div>
+                            <div class="mockup-row">
+                                <span class="who">Vacation Balance</span>
+                                <span class="mockup-pill green">$412.60</span>
+                            </div>
+                        </div>
+                        <div class="mockup-title" style="text-transform:none; letter-spacing:0;">Encrypted at rest - decrypted only for authorized processing</div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -118,7 +183,7 @@
             <div class="role-grid">
                 <div class="step-card">
                     <h3>Open Shifts</h3>
-                    <p>Full visibility into open shifts and missed clock-out reviews across every location they're scoped to — unconditionally, no extra permission flag needed.</p>
+                    <p>Full visibility into open shifts and missed clock-out reviews across every location they're scoped to - unconditionally, no extra permission flag needed.</p>
                 </div>
                 <div class="step-card">
                     <h3>Location Details</h3>
@@ -127,6 +192,18 @@
                 <div class="step-card">
                     <h3>Leave &amp; WFH (Optional)</h3>
                     <p>Where an Admin grants it, a read-only combined view of every leave and WFH request across their scoped locations.</p>
+                </div>
+                <div class="step-card">
+                    <h3>Exportable Reports</h3>
+                    <p>CSV export and printable PDF reports per pay period, ready to hand off to a bookkeeper or tax preparer.</p>
+                </div>
+                <div class="step-card">
+                    <h3>Attendance Reports</h3>
+                    <p>The same detailed attendance report Admins and Managers see, useful for cross-checking hours before approving pay.</p>
+                </div>
+                <div class="step-card">
+                    <h3>Staff Directory (Optional)</h3>
+                    <p>Where an Admin grants canManageStaff, Accounting can also view and manage the staff directory directly.</p>
                 </div>
             </div>
         </div>

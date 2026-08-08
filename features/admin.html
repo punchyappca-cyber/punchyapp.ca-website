@@ -6,12 +6,12 @@
     <title>Admin Dashboard | Punchy</title>
     <link rel="stylesheet" href="../main.css">
     <style>
-        .feature-hero { padding: calc(var(--space-xl) + 20px) 0 var(--space-lg); background: radial-gradient(circle at top right, rgba(59, 130, 246, 0.1), transparent); }
+        .feature-hero { padding: calc(var(--space-xl) + 20px) 0 var(--space-lg); background: radial-gradient(circle at top right, rgba(79, 70, 229, 0.1), transparent); }
         .feature-hero h1 { font-size: 56px; margin-bottom: 24px; }
         .back-link { display: inline-flex; align-items: center; gap: 8px; color: var(--primary); text-decoration: none; font-weight: 700; margin-bottom: 32px; text-transform: uppercase; letter-spacing: 1px; font-size: 14px; }
         .grid-detail { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; margin-bottom: var(--space-xl); align-items: center; }
         .step-card { background: var(--surface); padding: 32px; border-radius: 24px; border: 1px solid var(--border); margin-bottom: 24px; }
-        .step-num { width: 40px; height: 40px; background: var(--primary); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 900; margin-bottom: 16px; }
+        .step-num { width: 40px; height: 40px; background: #4F46E5; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 900; margin-bottom: 16px; color: #fff; }
         .section-title { font-size: 32px; margin-bottom: 12px; }
         .role-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-top: 40px; }
         @media (max-width: 900px) { .grid-detail, .role-grid { grid-template-columns: 1fr; } }
@@ -40,7 +40,7 @@
             <div class="tag">For Company Owners</div>
             <h1>Run your entire company <br>from one dashboard</h1>
             <p style="font-size: 20px; max-width: 760px; color: var(--text-muted);">
-                The Admin is the company owner in Punchy — the only role that self-registers to create an account. Everything else, from locations to staff to payroll, is set up and overseen from here.
+                The Admin is the company owner in Punchy - the only role that self-registers to create an account. Everything else, from locations to staff to payroll, is set up and overseen from here.
             </p>
         </div>
     </section>
@@ -54,22 +54,75 @@
                     <div class="step-card">
                         <div class="step-num">1</div>
                         <h3>Per-location configuration</h3>
-                        <p>Set working hours, whether break tracking is required, the province/tax region, and whether vacation pay is paid out each cheque or banked for later payout.</p>
+                        <p>Set working hours by day of week, whether break tracking is required, the province for tax rules, and whether vacation pay is paid out each cheque or banked for later payout.</p>
                     </div>
                     <div class="step-card">
                         <div class="step-num">2</div>
                         <h3>Statutory &amp; manual closures</h3>
-                        <p>Mark statutory holidays and one-off administrative closures per location — staff and schedules automatically reflect them.</p>
+                        <p>Mark statutory holidays and one-off administrative closures per location - staff, schedules, and statutory holiday pay all reflect them automatically.</p>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-num">3</div>
+                        <h3>Company profile details</h3>
+                        <p>Address, phone, fax, employer/business number, and a benefits catalog you can attach to employees - the details Accounting needs at tax time.</p>
                     </div>
                 </div>
-                <div class="detail-img">
-                    <img src="https://images.unsplash.com/photo-1497215728101-856f4ea42174?auto=format&fit=crop&q=80&w=800" alt="Company location setup">
+                <div class="detail-img mockup">
+                    <div class="mockup-card">
+                        <div class="mockup-header">
+                            <span class="mockup-title">Locations</span>
+                            <div class="mockup-dots"><span></span><span></span><span></span></div>
+                        </div>
+                        <div class="mockup-rows">
+                            <div class="mockup-row">
+                                <span class="who">Downtown Cafe</span>
+                                <span class="mockup-pill green">3 Staff</span>
+                            </div>
+                            <div class="mockup-row">
+                                <span class="who">Warehouse North</span>
+                                <span class="mockup-pill blue">12 Staff</span>
+                            </div>
+                            <div class="mockup-row">
+                                <span class="who">Airport Kiosk</span>
+                                <span class="mockup-pill amber">Holiday Aug 4</span>
+                            </div>
+                        </div>
+                        <div class="mockup-stat-row">
+                            <div class="mockup-stat">
+                                <div class="num">3</div>
+                                <div class="label">Locations</div>
+                            </div>
+                            <div class="mockup-stat">
+                                <div class="num">17</div>
+                                <div class="label">Total Staff</div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
 
             <div class="grid-detail" style="margin-top:80px;">
-                <div class="detail-img" style="order:2;">
-                    <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=80&w=800" alt="Staff directory">
+                <div class="detail-img mockup" style="order:2;">
+                    <div class="mockup-card">
+                        <div class="mockup-header">
+                            <span class="mockup-title">Staff Directory</span>
+                            <div class="mockup-dots"><span></span><span></span><span></span></div>
+                        </div>
+                        <div class="mockup-rows">
+                            <div class="mockup-row">
+                                <span class="who"><span class="mockup-avatar" style="background:#4F46E5"></span>Sarah Chen - Employee</span>
+                                <span class="mockup-pill green">Active</span>
+                            </div>
+                            <div class="mockup-row">
+                                <span class="who"><span class="mockup-avatar" style="background:#10B981"></span>Marcus Lee - Manager</span>
+                                <span class="mockup-pill green">Active</span>
+                            </div>
+                            <div class="mockup-row">
+                                <span class="who"><span class="mockup-avatar" style="background:#94A3B8"></span>Dana Fox - Employee</span>
+                                <span class="mockup-pill amber">Invited</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div style="order:1;">
                     <h2 class="section-title">Staff, Managers &amp; Accounting</h2>
@@ -77,17 +130,17 @@
                     <div class="step-card">
                         <div class="step-num">1</div>
                         <h3>Full staff directory</h3>
-                        <p>Every employee, with photo, contact info, employment type, pay rate, and live status — active, invited, or disabled.</p>
+                        <p>Every employee, with photo, contact info, employment type, pay rate, and live status - active, invited, disabled, or deleted.</p>
                     </div>
                     <div class="step-card">
                         <div class="step-num">2</div>
-                        <h3>Granular permissions</h3>
-                        <p>Managers and Accounting are invited with individual permission toggles — manage staff, approve payroll, view leave/WFH — not an all-or-nothing role.</p>
+                        <h3>Dedicated Manager &amp; Accounting directories</h3>
+                        <p>Separate screens for managing who has Manager or Accounting access, which locations they're assigned to, and which permissions are switched on for each of them individually.</p>
                     </div>
                     <div class="step-card">
                         <div class="step-num">3</div>
                         <h3>Audit trail</h3>
-                        <p>Every profile edit, permission change, and forced clock-out is logged, so there's always a record of who changed what.</p>
+                        <p>Every profile edit, permission change, and forced clock-out is logged, so there's always a record of who changed what and when.</p>
                     </div>
                 </div>
             </div>
@@ -99,16 +152,66 @@
                     <div class="step-card">
                         <div class="step-num">1</div>
                         <h3>Build &amp; copy schedules</h3>
-                        <p>Create shifts per location and copy an entire pay period forward instead of rebuilding it from scratch. Print a blank or filled A4 schedule straight to PDF.</p>
+                        <p>Create shifts per location and copy an entire pay period forward instead of rebuilding it from scratch, with a confirmation review before anything overwrites. Print a blank or filled A4 schedule straight to PDF for physical posting.</p>
                     </div>
                     <div class="step-card">
                         <div class="step-num">2</div>
                         <h3>Photo-scan a paper schedule</h3>
-                        <p>Still run the schedule on a handwritten sheet? Take a photo — on-device text recognition reads it into digital shift entries for you to review and confirm before publishing. Nothing is uploaded to the cloud to do this.</p>
+                        <p>Still run the schedule on a handwritten sheet? Take a photo - on-device text recognition reads it into digital shift entries for you to review, edit, and confirm before publishing. Nothing is uploaded to the cloud to do this.</p>
                     </div>
                 </div>
-                <div class="detail-img">
-                    <img src="https://images.unsplash.com/photo-1506784983877-45594efa4cbe?auto=format&fit=crop&q=80&w=800" alt="Schedule planning">
+                <div class="detail-img mockup">
+                    <div class="mockup-card">
+                        <div class="mockup-header">
+                            <span class="mockup-title">This Week - Downtown Cafe</span>
+                            <div class="mockup-dots"><span></span><span></span><span></span></div>
+                        </div>
+                        <div class="mockup-grid">
+                            <span style="background:var(--primary)"></span><span style="background:var(--primary)"></span><span></span><span style="background:var(--primary)"></span><span style="background:var(--primary)"></span><span></span><span></span>
+                            <span></span><span style="background:var(--accent)"></span><span style="background:var(--accent)"></span><span></span><span style="background:var(--primary)"></span><span style="background:var(--primary)"></span><span></span>
+                            <span style="background:var(--primary)"></span><span></span><span style="background:var(--accent)"></span><span style="background:var(--accent)"></span><span></span><span></span><span style="background:var(--primary)"></span>
+                        </div>
+                        <div class="mockup-title" style="text-transform:none; letter-spacing:0;">21 shifts scheduled - 2 conflicts flagged</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid-detail" style="margin-top:80px;">
+                <div class="detail-img mockup" style="order:2;">
+                    <div class="mockup-card">
+                        <div class="mockup-header">
+                            <span class="mockup-title">Kiosk Devices</span>
+                            <div class="mockup-dots"><span></span><span></span><span></span></div>
+                        </div>
+                        <div class="mockup-rows">
+                            <div class="mockup-row">
+                                <span class="who">Front Desk iPad</span>
+                                <span class="mockup-pill green">Online</span>
+                            </div>
+                            <div class="mockup-row">
+                                <span class="who">Warehouse Entrance</span>
+                                <span class="mockup-pill green">Online</span>
+                            </div>
+                            <div class="mockup-row">
+                                <span class="who">Old Terminal (Retired)</span>
+                                <span class="mockup-pill red">Disabled</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div style="order:1;">
+                    <h2 class="section-title">Kiosk &amp; Device Control</h2>
+                    <p>Every shared clock-in tablet is registered to your account, and stays under your control remotely.</p>
+                    <div class="step-card">
+                        <div class="step-num">1</div>
+                        <h3>Pair with a QR scan</h3>
+                        <p>Register a new kiosk device to a specific location in seconds - no manual configuration on the tablet itself.</p>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-num">2</div>
+                        <h3>Remote enable/disable</h3>
+                        <p>Lost a tablet, or retiring one? Disable it remotely without touching the physical device, or switch your own device between Kiosk Mode and the full Admin app without signing out.</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -127,11 +230,23 @@
                 </div>
                 <div class="step-card">
                     <h3>Billing &amp; Plans</h3>
-                    <p>Manage your subscription tier and billing from your web dashboard — never an in-app purchase flow to maintain.</p>
+                    <p>Manage your subscription tier and billing from your web dashboard - never an in-app purchase flow to maintain, and never blocking a build submission on payment processing rules.</p>
                 </div>
                 <div class="step-card">
                     <h3>Security</h3>
-                    <p>Sensitive payroll identifiers like a SIN are encrypted before storage, and Face ID/biometric unlock keeps the app itself locked down.</p>
+                    <p>Sensitive payroll identifiers like a SIN are encrypted before storage, and Face ID/biometric unlock keeps the app itself locked down on-device.</p>
+                </div>
+                <div class="step-card">
+                    <h3>Open Shifts &amp; Missed Clock-Outs</h3>
+                    <p>Review every self-reported missed clock-out across the company and approve or reject it, or force-close a shift directly when needed.</p>
+                </div>
+                <div class="step-card">
+                    <h3>Notifications</h3>
+                    <p>An in-app notification center keeps you posted on leave/WFH requests, missed clock-out submissions, and payroll events as they happen.</p>
+                </div>
+                <div class="step-card">
+                    <h3>Account Controls</h3>
+                    <p>Terms of Service and Privacy Policy built into Settings, plus a self-service account deletion request if you ever need to close things down.</p>
                 </div>
             </div>
         </div>

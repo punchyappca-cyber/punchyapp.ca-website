@@ -6,12 +6,12 @@
     <title>Payroll | Punchy</title>
     <link rel="stylesheet" href="../main.css">
     <style>
-        .feature-hero { padding: calc(var(--space-xl) + 20px) 0 var(--space-lg); background: radial-gradient(circle at top right, rgba(16, 185, 129, 0.14), transparent); }
+        .feature-hero { padding: calc(var(--space-xl) + 20px) 0 var(--space-lg); background: radial-gradient(circle at top right, rgba(236, 72, 153, 0.12), transparent); }
         .feature-hero h1 { font-size: 56px; margin-bottom: 24px; }
         .back-link { display: inline-flex; align-items: center; gap: 8px; color: var(--primary); text-decoration: none; font-weight: 700; margin-bottom: 32px; text-transform: uppercase; letter-spacing: 1px; font-size: 14px; }
         .grid-detail { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; margin-bottom: var(--space-xl); align-items: center; }
         .step-card { background: var(--surface); padding: 32px; border-radius: 24px; border: 1px solid var(--border); margin-bottom: 24px; }
-        .step-num { width: 40px; height: 40px; background: var(--accent); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 900; margin-bottom: 16px; color: #fff; }
+        .step-num { width: 40px; height: 40px; background: #EC4899; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 900; margin-bottom: 16px; color: #fff; }
         .section-title { font-size: 32px; margin-bottom: 12px; }
         .role-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-top: 40px; }
         @media (max-width: 900px) { .grid-detail, .role-grid { grid-template-columns: 1fr; } }
@@ -54,27 +54,71 @@
                     <div class="step-card">
                         <div class="step-num">1</div>
                         <h3>Per-employee, per-location rates</h3>
-                        <p>Set an hourly rate and employment type per employee — with rate overrides per location for staff who work more than one site.</p>
+                        <p>Set an hourly rate and employment type per employee, with rate overrides per location for staff who work more than one site.</p>
                     </div>
                     <div class="step-card">
                         <div class="step-num">2</div>
                         <h3>Statutory holiday pay</h3>
-                        <p>When a location marks a day as a statutory holiday, eligible staff are paid for it automatically, calculated per your configured rule.</p>
+                        <p>When a location marks a day as a statutory holiday, eligible staff are paid for it automatically, calculated per your configured rule - none, a flat percentage, or a standard-average formula.</p>
                     </div>
                     <div class="step-card">
                         <div class="step-num">3</div>
                         <h3>Vacation pay, your way</h3>
-                        <p>Paid out on every cheque, or banked and paid out to an employee on request — set per location.</p>
+                        <p>Paid out on every cheque, or banked and paid out to an employee on request - set per location, tracked as a running vacation balance either way.</p>
                     </div>
                 </div>
-                <div class="detail-img">
-                    <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&q=80&w=800" alt="Payroll calculation">
+                <div class="detail-img mockup">
+                    <div class="mockup-card">
+                        <div class="mockup-header">
+                            <span class="mockup-title">Sarah C. - Pay Details</span>
+                            <div class="mockup-dots"><span></span><span></span><span></span></div>
+                        </div>
+                        <div class="mockup-rows">
+                            <div class="mockup-row">
+                                <span class="who">Hourly Rate</span>
+                                <span class="mockup-pill blue">$24.50</span>
+                            </div>
+                            <div class="mockup-row">
+                                <span class="who">Hours (Regular)</span>
+                                <span class="mockup-pill green">72.5</span>
+                            </div>
+                            <div class="mockup-row">
+                                <span class="who">Stat Holiday Pay</span>
+                                <span class="mockup-pill amber">$196.00</span>
+                            </div>
+                        </div>
+                        <div class="mockup-stat-row">
+                            <div class="mockup-stat">
+                                <div class="num">$1,973</div>
+                                <div class="label">Gross Pay</div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
 
             <div class="grid-detail" style="margin-top:80px;">
-                <div class="detail-img" style="order:2;">
-                    <img src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&q=80&w=800" alt="Payroll approval chain">
+                <div class="detail-img mockup" style="order:2;">
+                    <div class="mockup-card">
+                        <div class="mockup-header">
+                            <span class="mockup-title">Review Chain</span>
+                            <div class="mockup-dots"><span></span><span></span><span></span></div>
+                        </div>
+                        <div class="mockup-rows">
+                            <div class="mockup-row">
+                                <span class="who">1. Manager Submits</span>
+                                <span class="mockup-pill green">Done</span>
+                            </div>
+                            <div class="mockup-row">
+                                <span class="who">2. Accounting Approves</span>
+                                <span class="mockup-pill amber">In Review</span>
+                            </div>
+                            <div class="mockup-row">
+                                <span class="who">3. Paystub Generated</span>
+                                <span class="mockup-pill blue">Pending</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div style="order:1;">
                     <h2 class="section-title">A Real Review Chain</h2>
@@ -87,12 +131,51 @@
                     <div class="step-card">
                         <div class="step-num">2</div>
                         <h3>Accounting cross-checks &amp; approves</h3>
-                        <p>Accounting verifies the submission against clock data before approving — and can still make a tracked amendment afterward if something needs correcting.</p>
+                        <p>Accounting verifies the submission against clock data before approving, and can still make a tracked amendment afterward if something needs correcting.</p>
                     </div>
                     <div class="step-card">
                         <div class="step-num">3</div>
                         <h3>Paystub, generated</h3>
-                        <p>Approval generates a permanent paystub snapshot per employee for that period — a fixed record, not a live document.</p>
+                        <p>Approval generates a permanent paystub snapshot per employee for that period - a fixed PDF record, not a live document, downloadable and shareable.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid-detail" style="margin-top:80px;">
+                <div>
+                    <h2 class="section-title">Keeping Payroll Data Safe</h2>
+                    <p>Payroll processing sometimes requires identifiers you can't leave in plain text.</p>
+                    <div class="step-card">
+                        <div class="step-num">1</div>
+                        <h3>Encrypted payroll IDs</h3>
+                        <p>A Social Insurance Number is encrypted before it's ever stored, decrypted only for authorized payroll processing by Accounting or Admin.</p>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-num">2</div>
+                        <h3>Exportable, not locked in</h3>
+                        <p>Generate CSV and PDF exports per pay period, ready to hand to a bookkeeper or accountant outside Punchy whenever you need to.</p>
+                    </div>
+                </div>
+                <div class="detail-img mockup">
+                    <div class="mockup-card">
+                        <div class="mockup-header">
+                            <span class="mockup-title">Paystub - Aug 1-14</span>
+                            <div class="mockup-dots"><span></span><span></span><span></span></div>
+                        </div>
+                        <div class="mockup-rows">
+                            <div class="mockup-row">
+                                <span class="who">Gross Pay</span>
+                                <span class="mockup-pill green">$1,973.00</span>
+                            </div>
+                            <div class="mockup-row">
+                                <span class="who">Deductions (CPP/EI/Tax)</span>
+                                <span class="mockup-pill red">-$412.30</span>
+                            </div>
+                            <div class="mockup-row">
+                                <span class="who">Net Pay</span>
+                                <span class="mockup-pill blue">$1,560.70</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -103,20 +186,20 @@
         <div class="container">
             <div class="section-header">
                 <div class="tag">Also Included</div>
-                <h2>Keeping payroll data safe</h2>
+                <h2>What rounds out payroll</h2>
             </div>
             <div class="role-grid">
                 <div class="step-card">
-                    <h3>Encrypted Payroll IDs</h3>
-                    <p>A Social Insurance Number is encrypted before it's ever stored, decrypted only for authorized payroll processing.</p>
-                </div>
-                <div class="step-card">
                     <h3>Billing, Handled Separately</h3>
-                    <p>Your Punchy subscription itself is managed through your web dashboard — never an in-app purchase to reconcile.</p>
+                    <p>Your Punchy subscription itself is managed through your web dashboard - never an in-app purchase to reconcile.</p>
                 </div>
                 <div class="step-card">
-                    <h3>Exportable Reports</h3>
-                    <p>Generate payroll and attendance reports per location, ready to hand to a bookkeeper or accountant outside Punchy.</p>
+                    <h3>Vacation Payouts</h3>
+                    <p>When vacation pay is banked, staff can request a payout and Accounting handles it as its own tracked record.</p>
+                </div>
+                <div class="step-card">
+                    <h3>Amendment History</h3>
+                    <p>A correction to an already-approved period is tracked separately from the original approval, so nothing silently overwrites payroll history.</p>
                 </div>
             </div>
         </div>
