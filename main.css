@@ -80,8 +80,8 @@ nav {
   left: 0;
   right: 0;
   height: 84px;
-  background: rgba(246, 247, 251, 0.75);
-  backdrop-filter: blur(14px);
+  background: rgba(255, 255, 255, 0.94);
+  backdrop-filter: blur(18px);
   z-index: 1000;
   border-bottom: 1px solid transparent;
   display: flex;
@@ -274,6 +274,62 @@ nav.scrolled {
   width: 100%;
   display: block;
   border-radius: 20px;
+}
+
+.hero-dashboard {
+  background: var(--surface-muted);
+  border-radius: 20px;
+  overflow: hidden;
+  text-align: left;
+}
+
+.hero-dashboard-topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 28px;
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+}
+
+.hero-dashboard-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 800;
+  font-family: 'Outfit', sans-serif;
+  color: var(--text-main);
+}
+
+.hero-dashboard-greeting {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-muted);
+}
+
+.hero-dashboard-body {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  gap: 28px;
+  padding: 28px;
+}
+
+.hero-dashboard-col .mockup-stat-row {
+  gap: 12px;
+}
+
+.hero-dashboard-col .mockup-stat {
+  padding: 12px;
+}
+
+.hero-dashboard-col .mockup-stat .num {
+  font-size: 20px;
+}
+
+@media (max-width: 900px) {
+  .hero-dashboard-body {
+    grid-template-columns: 1fr;
+  }
 }
 
 /* --- Features Grid --- */
@@ -698,6 +754,83 @@ footer {
 /* --- Shared section variant --- */
 .bg-soft {
   background: var(--surface-muted);
+}
+
+/* --- Stepper (How It Works) --- */
+.stepper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  position: relative;
+  padding-top: 26px;
+}
+
+.stepper-line {
+  position: absolute;
+  top: 26px;
+  left: calc(12.5% + 26px);
+  right: calc(12.5% + 26px);
+  height: 2px;
+  background: var(--border);
+  z-index: 0;
+}
+
+.stepper-item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.stepper-num {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-weight: 800;
+  font-size: 18px;
+  font-family: 'Outfit', sans-serif;
+  box-shadow: 0 0 0 6px var(--background);
+  z-index: 1;
+  margin-top: -26px;
+  margin-bottom: 20px;
+}
+
+.stepper-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 24px;
+  height: 100%;
+}
+
+.stepper-card h3 {
+  font-size: 17px;
+  margin-bottom: 8px;
+  color: var(--text-main);
+}
+
+.stepper-card p {
+  color: var(--text-muted);
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+@media (max-width: 900px) {
+  .stepper {
+    grid-template-columns: 1fr;
+    padding-top: 0;
+  }
+  .stepper-line {
+    display: none;
+  }
+  .stepper-num {
+    margin-top: 0;
+  }
 }
 
 /* --- Responsive --- */

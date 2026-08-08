@@ -46,7 +46,71 @@
                 <a href="mailto:support@punchyapp.ca" class="btn btn-secondary">Talk to Us</a>
             </div>
             <div class="hero-mockup">
-                <img src="landing_hero.png" alt="Punchy dashboard preview">
+                <div class="hero-dashboard">
+                    <div class="hero-dashboard-topbar">
+                        <div class="hero-dashboard-brand">
+                            <div class="logo-icon" style="width:28px;height:28px;font-size:13px;">P</div>
+                            <span>Punchy</span>
+                        </div>
+                        <div class="hero-dashboard-greeting">Good morning, Admin</div>
+                    </div>
+                    <div class="hero-dashboard-body">
+                        <div class="hero-dashboard-col">
+                            <div class="mockup-stat-row">
+                                <div class="mockup-stat">
+                                    <div class="num">17</div>
+                                    <div class="label">Total Staff</div>
+                                </div>
+                                <div class="mockup-stat">
+                                    <div class="num">96%</div>
+                                    <div class="label">Reliability</div>
+                                </div>
+                                <div class="mockup-stat">
+                                    <div class="num">$18.2k</div>
+                                    <div class="label">Payroll (Aug)</div>
+                                </div>
+                            </div>
+                            <div class="mockup-title" style="margin-top:20px;">Today's Shifts</div>
+                            <div class="mockup-rows" style="margin-top:10px;">
+                                <div class="mockup-row">
+                                    <span class="who"><span class="mockup-avatar" style="background:#4F46E5"></span>Sarah C. - Downtown Cafe</span>
+                                    <span class="mockup-pill green">Clocked In</span>
+                                </div>
+                                <div class="mockup-row">
+                                    <span class="who"><span class="mockup-avatar" style="background:#10B981"></span>Marcus L. - Warehouse</span>
+                                    <span class="mockup-pill blue">Upcoming</span>
+                                </div>
+                                <div class="mockup-row">
+                                    <span class="who"><span class="mockup-avatar" style="background:#F59E0B"></span>Dana F. - Airport Kiosk</span>
+                                    <span class="mockup-pill amber">Not Clocked In</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hero-dashboard-col">
+                            <div class="mockup-title">Attendance - 7 Days</div>
+                            <div class="mockup-bars" style="margin-top:14px;">
+                                <div class="bar" style="height:45%"></div>
+                                <div class="bar hi" style="height:82%"></div>
+                                <div class="bar" style="height:60%"></div>
+                                <div class="bar hi" style="height:92%"></div>
+                                <div class="bar" style="height:55%"></div>
+                                <div class="bar hi" style="height:78%"></div>
+                                <div class="bar" style="height:40%"></div>
+                            </div>
+                            <div class="mockup-title" style="margin-top:20px;">Pending Approvals</div>
+                            <div class="mockup-rows" style="margin-top:10px;">
+                                <div class="mockup-row">
+                                    <span class="who">Leave - Aug 14-16</span>
+                                    <span class="mockup-pill blue">Review</span>
+                                </div>
+                                <div class="mockup-row">
+                                    <span class="who">Missed Clock-Out - Priya S.</span>
+                                    <span class="mockup-pill red">Review</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -326,26 +390,35 @@
                 <div class="tag">Getting Started</div>
                 <h2>Up and running in <br>four steps</h2>
             </div>
-            <div class="role-grid" style="grid-template-columns: repeat(4, 1fr);">
-                <div class="mockup-card" style="text-align:left;">
-                    <div class="feature-icon" style="background:rgba(79,70,229,0.1); color:#4F46E5;">1</div>
-                    <h3 style="font-size:17px; margin-bottom:6px;">Create your company</h3>
-                    <p style="color:var(--text-muted); font-size:14px;">Sign up as Admin and add your first business location - hours, holidays, and vacation-pay policy included.</p>
+            <div class="stepper">
+                <div class="stepper-line"></div>
+                <div class="stepper-item">
+                    <div class="stepper-num" style="background:#4F46E5;">1</div>
+                    <div class="stepper-card">
+                        <h3>Create your company</h3>
+                        <p>Sign up as Admin and add your first business location - hours, holidays, and vacation-pay policy included.</p>
+                    </div>
                 </div>
-                <div class="mockup-card" style="text-align:left;">
-                    <div class="feature-icon" style="background:rgba(16,185,129,0.12); color:#10B981;">2</div>
-                    <h3 style="font-size:17px; margin-bottom:6px;">Invite your team</h3>
-                    <p style="color:var(--text-muted); font-size:14px;">Add employees directly, or invite Managers and Accounting staff scoped to specific locations and permissions.</p>
+                <div class="stepper-item">
+                    <div class="stepper-num" style="background:#10B981;">2</div>
+                    <div class="stepper-card">
+                        <h3>Invite your team</h3>
+                        <p>Add employees directly, or invite Managers and Accounting staff scoped to specific locations and permissions.</p>
+                    </div>
                 </div>
-                <div class="mockup-card" style="text-align:left;">
-                    <div class="feature-icon" style="background:rgba(245,158,11,0.12); color:#F59E0B;">3</div>
-                    <h3 style="font-size:17px; margin-bottom:6px;">Pair a kiosk</h3>
-                    <p style="color:var(--text-muted); font-size:14px;">Scan a QR code to turn a shared tablet into a clock-in terminal at the door - no extra hardware to buy.</p>
+                <div class="stepper-item">
+                    <div class="stepper-num" style="background:#F59E0B;">3</div>
+                    <div class="stepper-card">
+                        <h3>Pair a kiosk</h3>
+                        <p>Scan a QR code to turn a shared tablet into a clock-in terminal at the door - no extra hardware to buy.</p>
+                    </div>
                 </div>
-                <div class="mockup-card" style="text-align:left;">
-                    <div class="feature-icon" style="background:rgba(236,72,153,0.1); color:#EC4899;">4</div>
-                    <h3 style="font-size:17px; margin-bottom:6px;">Run your first payroll</h3>
-                    <p style="color:var(--text-muted); font-size:14px;">Let clock data drive the numbers, submit for review, and generate paystubs automatically.</p>
+                <div class="stepper-item">
+                    <div class="stepper-num" style="background:#EC4899;">4</div>
+                    <div class="stepper-card">
+                        <h3>Run your first payroll</h3>
+                        <p>Let clock data drive the numbers, submit for review, and generate paystubs automatically.</p>
+                    </div>
                 </div>
             </div>
         </div>
