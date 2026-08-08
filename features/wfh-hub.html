@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WFH Lifecycle Hub | Punchy Enterprise</title>
+    <link rel="stylesheet" href="../main.css">
+    <style>
+        .feature-hero {
+            padding: calc(var(--space-xl) + 20px) 0 var(--space-lg);
+            background: radial-gradient(circle at top right, rgba(59, 130, 246, 0.1), transparent);
+        }
+        .feature-hero h1 {
+            font-size: 64px;
+            margin-bottom: 24px;
+        }
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 700;
+            margin-bottom: 32px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 14px;
+        }
+        .grid-detail {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 64px;
+            margin-bottom: var(--space-xl);
+            align-items: center;
+        }
+        .step-card {
+            background: var(--surface);
+            padding: 32px;
+            border-radius: 24px;
+            border: 1px solid var(--border);
+            margin-bottom: 24px;
+        }
+        .step-num {
+            width: 40px;
+            height: 40px;
+            background: var(--primary);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 900;
+            margin-bottom: 16px;
+        }
+    </style>
+</head>
+<body>
+    <nav id="navbar">
+        <div class="container nav-content">
+            <a href="../index.html" class="logo">
+                <div class="logo-icon">P</div>
+                <span>Punchy <span>Enterprise</span></span>
+            </a>
+            <div class="nav-links">
+                <a href="../index.html#features">Platform Overview</a>
+                <a href="../index.html#compliance">Governance</a>
+                <a href="../index.html#kiosk">Hardware Hub</a>
+                <a href="../index.html#reporting">Reporting</a>
+                <a href="../index.html" class="btn btn-primary nav-cta">Get Started</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="feature-hero">
+        <div class="container">
+            <a href="../index.html" class="back-link">&larr; Back to Platform</a>
+            <div class="tag">Workforce Flex</div>
+            <h1>WFH Lifecycle Hub</h1>
+            <p style="font-size: 20px; max-width: 800px; color: var(--text-muted);">
+                Seamlessly transition between office and remote work with our industry-leading WFH lifecycle manager. 
+                Designed for high-trust, high-performance hybrid teams.
+            </p>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="grid-detail">
+                <div>
+                    <h2>Intelligent Request Flow</h2>
+                    <p>Stop managing remote work via Slack threads and emails. Punchy provides a centralized request engine where employees can apply for WFH in seconds.</p>
+                    <div class="step-card">
+                        <div class="step-num">1</div>
+                        <h3>Smart Conflict Detection</h3>
+                        <p>Our system automatically flags if a WFH request overlaps with a required in-office shift, existing leave, or team-wide "Office Day" policies.</p>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-num">2</div>
+                        <h3>Admin Control Panel</h3>
+                        <p>Admins see a streamlined swiper interface to quickly approve or reject requests, with full context on the team's capacity for that day.</p>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-num">3</div>
+                        <h3>Audit Trail</h3>
+                        <p>Every WFH day is logged as a specific event, ensuring payroll and tax compliance for remote work credits.</p>
+                    </div>
+                </div>
+                <div class="detail-img">
+                    <img src="https://images.unsplash.com/photo-1586282391129-59a998bd1160?auto=format&fit=crop&q=80&w=800" alt="WFH Management Interface">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div style="text-align: center; color: var(--text-muted); font-size: 14px;">
+                &copy; 2026 Punchy Enterprise Inc. All rights reserved.
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

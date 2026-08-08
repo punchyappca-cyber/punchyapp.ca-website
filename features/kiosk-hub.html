@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Remote Kiosk Hub | Punchy Enterprise</title>
+    <link rel="stylesheet" href="../main.css">
+    <style>
+        .feature-hero {
+            padding: calc(var(--space-xl) + 20px) 0 var(--space-lg);
+            background: radial-gradient(circle at top right, rgba(59, 130, 246, 0.1), transparent);
+        }
+        .feature-hero h1 { font-size: 64px; margin-bottom: 24px; }
+        .back-link {
+            display: inline-flex; align-items: center; gap: 8px; color: var(--primary);
+            text-decoration: none; font-weight: 700; margin-bottom: 32px;
+            text-transform: uppercase; letter-spacing: 1px; font-size: 14px;
+        }
+        .grid-detail { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; margin-bottom: var(--space-xl); align-items: center; }
+        .card { background: var(--surface); padding: 32px; border-radius: 24px; border: 1px solid var(--border); margin-bottom: 24px; }
+    </style>
+</head>
+<body>
+    <nav id="navbar">
+        <div class="container nav-content">
+            <a href="../index.html" class="logo">
+                <div class="logo-icon">P</div>
+                <span>Punchy <span>Enterprise</span></span>
+            </a>
+            <div class="nav-links">
+                <a href="../index.html#features">Platform Overview</a>
+                <a href="../index.html#compliance">Governance</a>
+                <a href="../index.html#kiosk">Hardware Hub</a>
+                <a href="../index.html#reporting">Reporting</a>
+                <a href="../index.html" class="btn btn-primary nav-cta">Get Started</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="feature-hero">
+        <div class="container">
+            <a href="../index.html" class="back-link">&larr; Back to Platform</a>
+            <div class="tag">Hardware Governance</div>
+            <h1>Remote Kiosk Hub</h1>
+            <p style="font-size: 20px; max-width: 800px; color: var(--text-muted);">
+                Total control over your physical attendance terminals. Remotely manage, monitor, and master your hardware deployment across the globe.
+            </p>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="grid-detail">
+                <div>
+                    <h2>Zero-Touch Terminal Management</h2>
+                    <p>Stop dispatching IT staff for simple terminal resets. Punchy puts every physical kiosk in your organization just one click away from your central dashboard.</p>
+                    
+                    <div class="card">
+                        <h3>Sub-Location Precision</h3>
+                        <p>Don't just know which branch a kiosk is in—know exactly where it's located. Name your terminals "Main Lobby", "Back Dock", or "Breakroom B" for pinpoint tracking.</p>
+                    </div>
+
+                    <div class="card">
+                        <h3>Remote Enable/Disable</h3>
+                        <p>Instantly lock down terminals for maintenance or security reasons. Disabled kiosks show a professional, branded "Maintenance" screen to employees automatically.</p>
+                    </div>
+
+                    <div class="card">
+                        <h3>Over-the-Air Sign Outs</h3>
+                        <p>Remotely force-sign-out all users or specific terminals to ensure security compliance during shift changes or emergency situations.</p>
+                    </div>
+                </div>
+                <div class="detail-img">
+                    <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&q=80&w=800" alt="Hardware Terminal Kiosk">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div style="text-align: center; color: var(--text-muted); font-size: 14px;">
+                &copy; 2026 Punchy Enterprise Inc. All rights reserved.
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

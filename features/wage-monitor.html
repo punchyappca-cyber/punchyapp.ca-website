@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Wage Monitor | Punchy Enterprise</title>
+    <link rel="stylesheet" href="../main.css">
+    <style>
+        .feature-hero {
+            padding: calc(var(--space-xl) + 20px) 0 var(--space-lg);
+            background: radial-gradient(circle at top right, rgba(16, 185, 129, 0.1), transparent);
+        }
+        .feature-hero h1 { font-size: 64px; margin-bottom: 24px; }
+        .back-link {
+            display: inline-flex; align-items: center; gap: 8px; color: var(--primary);
+            text-decoration: none; font-weight: 700; margin-bottom: 32px;
+            text-transform: uppercase; letter-spacing: 1px; font-size: 14px;
+        }
+        .grid-detail { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; margin-bottom: var(--space-xl); align-items: center; }
+        .card { background: var(--surface); padding: 32px; border-radius: 24px; border: 1px solid var(--border); margin-bottom: 24px; }
+        .tech-highlight { font-family: monospace; background: #1e293b; padding: 4px 8px; border-radius: 6px; color: var(--accent); }
+    </style>
+</head>
+<body>
+    <nav id="navbar">
+        <div class="container nav-content">
+            <a href="../index.html" class="logo">
+                <div class="logo-icon">P</div>
+                <span>Punchy <span>Enterprise</span></span>
+            </a>
+            <div class="nav-links">
+                <a href="../index.html#features">Platform Overview</a>
+                <a href="../index.html#compliance">Governance</a>
+                <a href="../index.html#kiosk">Hardware Hub</a>
+                <a href="../index.html#reporting">Reporting</a>
+                <a href="../index.html" class="btn btn-primary nav-cta">Get Started</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="feature-hero">
+        <div class="container">
+            <a href="../index.html" class="back-link">&larr; Back to Platform</a>
+            <div class="tag">Financial Intelligence</div>
+            <h1>Live Wage Monitor</h1>
+            <p style="font-size: 20px; max-width: 800px; color: var(--text-muted);">
+                Real-time visibility into your labor costs. Punchy calculates gross pay, tax liabilities, and compliance risks with every clock-in event.
+            </p>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="grid-detail">
+                <div>
+                    <h2>Real-time Labor Pulse</h2>
+                    <p>Waiting for the end of the month to see your payroll expenses is a risk of the past. Punchy gives you a second-by-second breakdown of your global labor spend.</p>
+                    
+                    <div class="card">
+                        <h3>O(N) Optimized Performance</h3>
+                        <p>Our analytics engine uses a sophisticated <span class="tech-highlight">Map-based lookup algorithm</span> to ensure processing speed doesn't lag, even as your headcount grows into the thousands.</p>
+                    </div>
+
+                    <div class="card">
+                        <h3>Automated Compliance</h3>
+                        <p>Automatically flags overtime violations and minimum wage compliance across different jurisdictions. Ensure your enterprise stays protected and profitable.</p>
+                    </div>
+
+                    <div class="card">
+                        <h3>Tax Predictive Analytics</h3>
+                        <p>Estimates Federal, State, and FICA liabilities on the fly, giving you a true "Total Cost of Workforce" view at any moment.</p>
+                    </div>
+                </div>
+                <div class="detail-img">
+                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=800" alt="Wage Monitoring Dashboard">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div style="text-align: center; color: var(--text-muted); font-size: 14px;">
+                &copy; 2026 Punchy Enterprise Inc. All rights reserved.
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
