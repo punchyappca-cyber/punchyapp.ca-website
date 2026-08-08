@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accounting Dashboard | Punchy</title>
+    <link rel="stylesheet" href="../main.css">
+    <style>
+        .feature-hero { padding: calc(var(--space-xl) + 20px) 0 var(--space-lg); background: radial-gradient(circle at top right, rgba(139, 92, 246, 0.12), transparent); }
+        .feature-hero h1 { font-size: 56px; margin-bottom: 24px; }
+        .back-link { display: inline-flex; align-items: center; gap: 8px; color: var(--primary); text-decoration: none; font-weight: 700; margin-bottom: 32px; text-transform: uppercase; letter-spacing: 1px; font-size: 14px; }
+        .grid-detail { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; margin-bottom: var(--space-xl); align-items: center; }
+        .step-card { background: var(--surface); padding: 32px; border-radius: 24px; border: 1px solid var(--border); margin-bottom: 24px; }
+        .step-num { width: 40px; height: 40px; background: #8B5CF6; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 900; margin-bottom: 16px; }
+        .section-title { font-size: 32px; margin-bottom: 12px; }
+        .role-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-top: 40px; }
+        @media (max-width: 900px) { .grid-detail, .role-grid { grid-template-columns: 1fr; } }
+    </style>
+</head>
+<body>
+    <nav id="navbar">
+        <div class="container nav-content">
+            <a href="../index.html" class="logo">
+                <div class="logo-icon">P</div>
+                <span>Punchy</span>
+            </a>
+            <div class="nav-links">
+                <a href="../index.html#roles">Platform</a>
+                <a href="payroll.html">Payroll</a>
+                <a href="kiosk.html">Kiosk</a>
+                <a href="../terms.html">Terms</a>
+                <a href="../privacy.html">Privacy</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="feature-hero">
+        <div class="container">
+            <a href="../index.html" class="back-link">&larr; Back to Home</a>
+            <div class="tag">Invited by an Admin</div>
+            <h1>Cross-check payroll <br>before it's final</h1>
+            <p style="font-size: 20px; max-width: 760px; color: var(--text-muted);">
+                Accounting isn't a self-service signup — an Admin invites accounting staff and grants exactly the permissions they need, scoped to specific company locations. Their job: verify the numbers before anyone gets paid.
+            </p>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="grid-detail">
+                <div>
+                    <h2 class="section-title">Invited Access, Not a Role Toggle</h2>
+                    <p>Every accounting user is tied to the Admin who invited them, with individual permission flags rather than one all-or-nothing switch.</p>
+                    <div class="step-card">
+                        <div class="step-num">1</div>
+                        <h3>Company-scoped</h3>
+                        <p>Access is limited to the specific companies/locations an Admin grants — never the whole platform.</p>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-num">2</div>
+                        <h3>Permission by permission</h3>
+                        <p>Approve payroll, manage staff, view leave/WFH — each is its own toggle, so an Admin can grant exactly as much access as the role needs.</p>
+                    </div>
+                </div>
+                <div class="detail-img">
+                    <img src="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&q=80&w=800" alt="Accounting review">
+                </div>
+            </div>
+
+            <div class="grid-detail" style="margin-top:80px;">
+                <div class="detail-img" style="order:2;">
+                    <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&q=80&w=800" alt="Payroll approval">
+                </div>
+                <div style="order:1;">
+                    <h2 class="section-title">The Payroll Review Chain</h2>
+                    <p>Payroll never goes straight from a Manager's submission to a paycheck — Accounting is the verification step in between.</p>
+                    <div class="step-card">
+                        <div class="step-num">1</div>
+                        <h3>Cross-check submitted periods</h3>
+                        <p>Review what a Manager submitted against actual clock data before approving — amendments are tracked separately from the original approval.</p>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-num">2</div>
+                        <h3>Generate paystubs</h3>
+                        <p>Once approved, a paystub snapshot is generated per employee for that pay period — a permanent record, not a live document that can drift.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid-detail" style="margin-top:80px;">
+                <div>
+                    <h2 class="section-title">Handling Sensitive Data</h2>
+                    <p>Payroll processing sometimes requires identifiers you can't leave in plain text.</p>
+                    <div class="step-card">
+                        <div class="step-num">1</div>
+                        <h3>Encrypted payroll identifiers</h3>
+                        <p>A Social Insurance Number is encrypted before it's ever stored — only authorized Accounting and Admin users can decrypt it, and only for payroll processing.</p>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-num">2</div>
+                        <h3>Vacation pay &amp; payouts</h3>
+                        <p>Whether a location pays vacation pay out each cheque or banks it, Accounting handles the payout requests for banked balances.</p>
+                    </div>
+                </div>
+                <div class="detail-img">
+                    <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&q=80&w=800" alt="Data security">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-soft">
+        <div class="container">
+            <div class="section-header">
+                <div class="tag">Also Included</div>
+                <h2>What else Accounting can access</h2>
+            </div>
+            <div class="role-grid">
+                <div class="step-card">
+                    <h3>Open Shifts</h3>
+                    <p>Full visibility into open shifts and missed clock-out reviews across every location they're scoped to — unconditionally, no extra permission flag needed.</p>
+                </div>
+                <div class="step-card">
+                    <h3>Location Details</h3>
+                    <p>A read-only view of each location's Admin and Manager contact info, hours, and closures.</p>
+                </div>
+                <div class="step-card">
+                    <h3>Leave &amp; WFH (Optional)</h3>
+                    <p>Where an Admin grants it, a read-only combined view of every leave and WFH request across their scoped locations.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div style="text-align: center; color: var(--text-muted); font-size: 14px;">
+                &copy; 2026 Punchy. All rights reserved.
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

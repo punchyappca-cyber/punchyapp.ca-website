@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard | Punchy</title>
+    <link rel="stylesheet" href="../main.css">
+    <style>
+        .feature-hero { padding: calc(var(--space-xl) + 20px) 0 var(--space-lg); background: radial-gradient(circle at top right, rgba(59, 130, 246, 0.1), transparent); }
+        .feature-hero h1 { font-size: 56px; margin-bottom: 24px; }
+        .back-link { display: inline-flex; align-items: center; gap: 8px; color: var(--primary); text-decoration: none; font-weight: 700; margin-bottom: 32px; text-transform: uppercase; letter-spacing: 1px; font-size: 14px; }
+        .grid-detail { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; margin-bottom: var(--space-xl); align-items: center; }
+        .step-card { background: var(--surface); padding: 32px; border-radius: 24px; border: 1px solid var(--border); margin-bottom: 24px; }
+        .step-num { width: 40px; height: 40px; background: var(--primary); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 900; margin-bottom: 16px; }
+        .section-title { font-size: 32px; margin-bottom: 12px; }
+        .role-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-top: 40px; }
+        @media (max-width: 900px) { .grid-detail, .role-grid { grid-template-columns: 1fr; } }
+    </style>
+</head>
+<body>
+    <nav id="navbar">
+        <div class="container nav-content">
+            <a href="../index.html" class="logo">
+                <div class="logo-icon">P</div>
+                <span>Punchy</span>
+            </a>
+            <div class="nav-links">
+                <a href="../index.html#roles">Platform</a>
+                <a href="payroll.html">Payroll</a>
+                <a href="kiosk.html">Kiosk</a>
+                <a href="../terms.html">Terms</a>
+                <a href="../privacy.html">Privacy</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="feature-hero">
+        <div class="container">
+            <a href="../index.html" class="back-link">&larr; Back to Home</a>
+            <div class="tag">For Company Owners</div>
+            <h1>Run your entire company <br>from one dashboard</h1>
+            <p style="font-size: 20px; max-width: 760px; color: var(--text-muted);">
+                The Admin is the company owner in Punchy — the only role that self-registers to create an account. Everything else, from locations to staff to payroll, is set up and overseen from here.
+            </p>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="grid-detail">
+                <div>
+                    <h2 class="section-title">Locations &amp; Company Setup</h2>
+                    <p>Add every business location your company operates, each with its own working hours, holiday closures, and payroll rules.</p>
+                    <div class="step-card">
+                        <div class="step-num">1</div>
+                        <h3>Per-location configuration</h3>
+                        <p>Set working hours, whether break tracking is required, the province/tax region, and whether vacation pay is paid out each cheque or banked for later payout.</p>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-num">2</div>
+                        <h3>Statutory &amp; manual closures</h3>
+                        <p>Mark statutory holidays and one-off administrative closures per location — staff and schedules automatically reflect them.</p>
+                    </div>
+                </div>
+                <div class="detail-img">
+                    <img src="https://images.unsplash.com/photo-1497215728101-856f4ea42174?auto=format&fit=crop&q=80&w=800" alt="Company location setup">
+                </div>
+            </div>
+
+            <div class="grid-detail" style="margin-top:80px;">
+                <div class="detail-img" style="order:2;">
+                    <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=80&w=800" alt="Staff directory">
+                </div>
+                <div style="order:1;">
+                    <h2 class="section-title">Staff, Managers &amp; Accounting</h2>
+                    <p>Invite employees directly, or bring on Managers and Accounting staff scoped to only the locations they should see.</p>
+                    <div class="step-card">
+                        <div class="step-num">1</div>
+                        <h3>Full staff directory</h3>
+                        <p>Every employee, with photo, contact info, employment type, pay rate, and live status — active, invited, or disabled.</p>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-num">2</div>
+                        <h3>Granular permissions</h3>
+                        <p>Managers and Accounting are invited with individual permission toggles — manage staff, approve payroll, view leave/WFH — not an all-or-nothing role.</p>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-num">3</div>
+                        <h3>Audit trail</h3>
+                        <p>Every profile edit, permission change, and forced clock-out is logged, so there's always a record of who changed what.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid-detail" style="margin-top:80px;">
+                <div>
+                    <h2 class="section-title">Scheduling, Two Ways</h2>
+                    <p>Build shifts directly in the app, or digitize a schedule you already run on paper.</p>
+                    <div class="step-card">
+                        <div class="step-num">1</div>
+                        <h3>Build &amp; copy schedules</h3>
+                        <p>Create shifts per location and copy an entire pay period forward instead of rebuilding it from scratch. Print a blank or filled A4 schedule straight to PDF.</p>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-num">2</div>
+                        <h3>Photo-scan a paper schedule</h3>
+                        <p>Still run the schedule on a handwritten sheet? Take a photo — on-device text recognition reads it into digital shift entries for you to review and confirm before publishing. Nothing is uploaded to the cloud to do this.</p>
+                    </div>
+                </div>
+                <div class="detail-img">
+                    <img src="https://images.unsplash.com/photo-1506784983877-45594efa4cbe?auto=format&fit=crop&q=80&w=800" alt="Schedule planning">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-soft">
+        <div class="container">
+            <div class="section-header">
+                <div class="tag">Also Included</div>
+                <h2>Oversight across the whole company</h2>
+            </div>
+            <div class="role-grid">
+                <div class="step-card">
+                    <h3>Reports &amp; Insights</h3>
+                    <p>Attendance reliability scoring, incident feeds for late/early arrivals and departures, and a side-by-side comparison across every location.</p>
+                </div>
+                <div class="step-card">
+                    <h3>Billing &amp; Plans</h3>
+                    <p>Manage your subscription tier and billing from your web dashboard — never an in-app purchase flow to maintain.</p>
+                </div>
+                <div class="step-card">
+                    <h3>Security</h3>
+                    <p>Sensitive payroll identifiers like a SIN are encrypted before storage, and Face ID/biometric unlock keeps the app itself locked down.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div style="text-align: center; color: var(--text-muted); font-size: 14px;">
+                &copy; 2026 Punchy. All rights reserved.
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

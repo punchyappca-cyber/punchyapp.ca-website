@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Staff | Punchy</title>
+    <link rel="stylesheet" href="../main.css">
+    <style>
+        .feature-hero { padding: calc(var(--space-xl) + 20px) 0 var(--space-lg); background: radial-gradient(circle at top right, rgba(16, 185, 129, 0.12), transparent); }
+        .feature-hero h1 { font-size: 56px; margin-bottom: 24px; }
+        .back-link { display: inline-flex; align-items: center; gap: 8px; color: var(--primary); text-decoration: none; font-weight: 700; margin-bottom: 32px; text-transform: uppercase; letter-spacing: 1px; font-size: 14px; }
+        .grid-detail { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; margin-bottom: var(--space-xl); align-items: center; }
+        .step-card { background: var(--surface); padding: 32px; border-radius: 24px; border: 1px solid var(--border); margin-bottom: 24px; }
+        .step-num { width: 40px; height: 40px; background: var(--accent); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 900; margin-bottom: 16px; color: #fff; }
+        .section-title { font-size: 32px; margin-bottom: 12px; }
+        .role-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-top: 40px; }
+        @media (max-width: 900px) { .grid-detail, .role-grid { grid-template-columns: 1fr; } }
+    </style>
+</head>
+<body>
+    <nav id="navbar">
+        <div class="container nav-content">
+            <a href="../index.html" class="logo">
+                <div class="logo-icon">P</div>
+                <span>Punchy</span>
+            </a>
+            <div class="nav-links">
+                <a href="../index.html#roles">Platform</a>
+                <a href="payroll.html">Payroll</a>
+                <a href="kiosk.html">Kiosk</a>
+                <a href="../terms.html">Terms</a>
+                <a href="../privacy.html">Privacy</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="feature-hero">
+        <div class="container">
+            <a href="../index.html" class="back-link">&larr; Back to Home</a>
+            <div class="tag">For Every Employee</div>
+            <h1>Your schedule, your hours, <br>your paystubs — in your pocket</h1>
+            <p style="font-size: 20px; max-width: 760px; color: var(--text-muted);">
+                Employees don't sign themselves up — they're invited by an Admin. From there, everything about their work day lives in one app instead of a shared spreadsheet and a paper time sheet.
+            </p>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="grid-detail">
+                <div>
+                    <h2 class="section-title">Clocking In, Your Way</h2>
+                    <p>No dedicated hardware to buy per employee — clock in with what's already at the door, or from your own phone.</p>
+                    <div class="step-card">
+                        <div class="step-num">1</div>
+                        <h3>Scan the kiosk QR code</h3>
+                        <p>A shared tablet at the entrance displays a QR code — scan it with your phone to clock in or out, start a break, or end one.</p>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-num">2</div>
+                        <h3>Face ID app unlock</h3>
+                        <p>Log back into the app quickly and securely with Face ID or fingerprint, instead of retyping a password every time.</p>
+                    </div>
+                </div>
+                <div class="detail-img">
+                    <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&q=80&w=800" alt="Employee clocking in with phone">
+                </div>
+            </div>
+
+            <div class="grid-detail" style="margin-top:80px;">
+                <div class="detail-img" style="order:2;">
+                    <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&q=80&w=800" alt="Employee reviewing schedule">
+                </div>
+                <div style="order:1;">
+                    <h2 class="section-title">Forgot to Clock Out?</h2>
+                    <p>It happens. Punchy doesn't silently guess a time for you or leave it stuck open forever.</p>
+                    <div class="step-card">
+                        <div class="step-num">1</div>
+                        <h3>Report it yourself</h3>
+                        <p>The app detects a shift that's drifted well past its scheduled end and asks you to enter the time you actually left, with an optional note.</p>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-num">2</div>
+                        <h3>Reviewed, not assumed</h3>
+                        <p>Your submission goes to an Admin, Manager, or Accounting for approval — you're notified the moment it's decided.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid-detail" style="margin-top:80px;">
+                <div>
+                    <h2 class="section-title">Leave, WFH &amp; Pay</h2>
+                    <p>Apply for time off and check your pay without a single email to HR.</p>
+                    <div class="step-card">
+                        <div class="step-num">1</div>
+                        <h3>Apply in seconds</h3>
+                        <p>Request leave or a work-from-home day; Punchy checks it against your schedule and other approved time off before your Manager ever sees it.</p>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-num">2</div>
+                        <h3>Paystubs &amp; personal attendance</h3>
+                        <p>View past paystubs, and see your own reliability score and early/late/missed counts — a personal view, never a leaderboard against coworkers.</p>
+                    </div>
+                </div>
+                <div class="detail-img">
+                    <img src="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&q=80&w=800" alt="Employee payroll view">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-soft">
+        <div class="container">
+            <div class="section-header">
+                <div class="tag">Also Included</div>
+                <h2>The rest of your Settings</h2>
+            </div>
+            <div class="role-grid">
+                <div class="step-card">
+                    <h3>My Locations</h3>
+                    <p>See every location you're assigned to, with your Manager and Admin's contact info right there.</p>
+                </div>
+                <div class="step-card">
+                    <h3>Privacy Controls</h3>
+                    <p>Read the Terms of Service and Privacy Policy in-app, and request deletion of your account and data at any time.</p>
+                </div>
+                <div class="step-card">
+                    <h3>Profile Photo</h3>
+                    <p>Add a photo that shows up wherever your name does — schedules, staff directory, approvals — compressed automatically to keep things fast.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div style="text-align: center; color: var(--text-muted); font-size: 14px;">
+                &copy; 2026 Punchy. All rights reserved.
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

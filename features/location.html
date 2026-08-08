@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Locations | Punchy</title>
+    <link rel="stylesheet" href="../main.css">
+    <style>
+        .feature-hero { padding: calc(var(--space-xl) + 20px) 0 var(--space-lg); background: radial-gradient(circle at top right, rgba(79, 70, 229, 0.12), transparent); }
+        .feature-hero h1 { font-size: 56px; margin-bottom: 24px; }
+        .back-link { display: inline-flex; align-items: center; gap: 8px; color: var(--primary); text-decoration: none; font-weight: 700; margin-bottom: 32px; text-transform: uppercase; letter-spacing: 1px; font-size: 14px; }
+        .grid-detail { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; margin-bottom: var(--space-xl); align-items: center; }
+        .step-card { background: var(--surface); padding: 32px; border-radius: 24px; border: 1px solid var(--border); margin-bottom: 24px; }
+        .step-num { width: 40px; height: 40px; background: var(--primary); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 900; margin-bottom: 16px; color: #fff; }
+        .section-title { font-size: 32px; margin-bottom: 12px; }
+        .role-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-top: 40px; }
+        @media (max-width: 900px) { .grid-detail, .role-grid { grid-template-columns: 1fr; } }
+    </style>
+</head>
+<body>
+    <nav id="navbar">
+        <div class="container nav-content">
+            <a href="../index.html" class="logo">
+                <div class="logo-icon">P</div>
+                <span>Punchy</span>
+            </a>
+            <div class="nav-links">
+                <a href="../index.html#roles">Platform</a>
+                <a href="payroll.html">Payroll</a>
+                <a href="kiosk.html">Kiosk</a>
+                <a href="../terms.html">Terms</a>
+                <a href="../privacy.html">Privacy</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="feature-hero">
+        <div class="container">
+            <a href="../index.html" class="back-link">&larr; Back to Home</a>
+            <div class="tag">Multi-Location From Day One</div>
+            <h1>Every location, <br>its own rules</h1>
+            <p style="font-size: 20px; max-width: 760px; color: var(--text-muted);">
+                A downtown café and a warehouse across town don't run on the same hours or the same payroll policy. Punchy treats every business location as its own configuration, under one company.
+            </p>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="grid-detail">
+                <div>
+                    <h2 class="section-title">Per-Location Configuration</h2>
+                    <p>Each location carries its own operating details, set once by the Admin.</p>
+                    <div class="step-card">
+                        <div class="step-num">1</div>
+                        <h3>Hours &amp; break policy</h3>
+                        <p>Working hours and whether break tracking is required are set per location, not forced company-wide.</p>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-num">2</div>
+                        <h3>Holiday closures</h3>
+                        <p>Mark statutory holidays and one-off administrative closures — schedules and statutory holiday pay reflect them automatically.</p>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-num">3</div>
+                        <h3>Vacation pay method</h3>
+                        <p>Choose whether vacation pay is added to every paycheque, or banked and paid out to staff on request.</p>
+                    </div>
+                </div>
+                <div class="detail-img">
+                    <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=800" alt="Multiple business locations">
+                </div>
+            </div>
+
+            <div class="grid-detail" style="margin-top:80px;">
+                <div class="detail-img" style="order:2;">
+                    <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80&w=800" alt="Location scoped access">
+                </div>
+                <div style="order:1;">
+                    <h2 class="section-title">Scoped Access, By Design</h2>
+                    <p>Nobody sees more of the company than their role needs to.</p>
+                    <div class="step-card">
+                        <div class="step-num">1</div>
+                        <h3>Admin sees everything</h3>
+                        <p>Every location, every employee, every payroll period — the full picture, always.</p>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-num">2</div>
+                        <h3>Managers &amp; Accounting see their assignment</h3>
+                        <p>A Manager assigned to two locations never sees a third they weren't given access to — same for invited Accounting staff.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-soft">
+        <div class="container">
+            <div class="section-header">
+                <div class="tag">Also Included</div>
+                <h2>Comparing performance across sites</h2>
+            </div>
+            <div class="role-grid">
+                <div class="step-card">
+                    <h3>Location Comparison</h3>
+                    <p>Admins can compare attendance reliability and labor metrics side-by-side across every location.</p>
+                </div>
+                <div class="step-card">
+                    <h3>Location Detail View</h3>
+                    <p>A tappable card showing the Admin, Manager, and Accounting contact for that location — reachable by call or directions.</p>
+                </div>
+                <div class="step-card">
+                    <h3>Print-Ready Schedules</h3>
+                    <p>Print a blank or filled A4 schedule for a specific location, ready to post physically on-site.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div style="text-align: center; color: var(--text-muted); font-size: 14px;">
+                &copy; 2026 Punchy. All rights reserved.
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

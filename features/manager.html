@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manager Dashboard | Punchy</title>
+    <link rel="stylesheet" href="../main.css">
+    <style>
+        .feature-hero { padding: calc(var(--space-xl) + 20px) 0 var(--space-lg); background: radial-gradient(circle at top right, rgba(16, 185, 129, 0.1), transparent); }
+        .feature-hero h1 { font-size: 56px; margin-bottom: 24px; }
+        .back-link { display: inline-flex; align-items: center; gap: 8px; color: var(--primary); text-decoration: none; font-weight: 700; margin-bottom: 32px; text-transform: uppercase; letter-spacing: 1px; font-size: 14px; }
+        .grid-detail { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; margin-bottom: var(--space-xl); align-items: center; }
+        .step-card { background: var(--surface); padding: 32px; border-radius: 24px; border: 1px solid var(--border); margin-bottom: 24px; }
+        .step-num { width: 40px; height: 40px; background: var(--accent); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 900; margin-bottom: 16px; }
+        .section-title { font-size: 32px; margin-bottom: 12px; }
+        .role-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-top: 40px; }
+        @media (max-width: 900px) { .grid-detail, .role-grid { grid-template-columns: 1fr; } }
+    </style>
+</head>
+<body>
+    <nav id="navbar">
+        <div class="container nav-content">
+            <a href="../index.html" class="logo">
+                <div class="logo-icon">P</div>
+                <span>Punchy</span>
+            </a>
+            <div class="nav-links">
+                <a href="../index.html#roles">Platform</a>
+                <a href="payroll.html">Payroll</a>
+                <a href="kiosk.html">Kiosk</a>
+                <a href="../terms.html">Terms</a>
+                <a href="../privacy.html">Privacy</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="feature-hero">
+        <div class="container">
+            <a href="../index.html" class="back-link">&larr; Back to Home</a>
+            <div class="tag">Scoped to Your Locations</div>
+            <h1>Everything for your location, <br>none of the noise</h1>
+            <p style="font-size: 20px; max-width: 760px; color: var(--text-muted);">
+                A Manager only sees the locations an Admin has assigned them to — never the whole company. Inside that scope, they run the day-to-day: schedules, approvals, and payroll for their own team.
+            </p>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="grid-detail">
+                <div>
+                    <h2 class="section-title">Scheduling for Your Team</h2>
+                    <p>Build and adjust shifts for whichever locations you're assigned to, with an at-a-glance view of who's working today.</p>
+                    <div class="step-card">
+                        <div class="step-num">1</div>
+                        <h3>Today's Shifts, front and center</h3>
+                        <p>The Manager dashboard leads with today's activity — who's clocked in, who's upcoming, and how many shifts are scheduled across your locations.</p>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-num">2</div>
+                        <h3>Copy schedules forward</h3>
+                        <p>Reuse last period's schedule instead of rebuilding it, with the same print-to-PDF option Admins have for physical posting.</p>
+                    </div>
+                </div>
+                <div class="detail-img">
+                    <img src="https://images.unsplash.com/photo-1531973576160-7125cd663d86?auto=format&fit=crop&q=80&w=800" alt="Manager schedule view">
+                </div>
+            </div>
+
+            <div class="grid-detail" style="margin-top:80px;">
+                <div class="detail-img" style="order:2;">
+                    <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=80&w=800" alt="Approving requests">
+                </div>
+                <div style="order:1;">
+                    <h2 class="section-title">Approvals, One Tap</h2>
+                    <p>Leave, work-from-home, and missed clock-out requests all land in one place, with immediate feedback once you act on them.</p>
+                    <div class="step-card">
+                        <div class="step-num">1</div>
+                        <h3>Leave &amp; WFH</h3>
+                        <p>Every request is pre-checked for conflicts against shifts and other approved time off — Approve or Reject with one tap, and the employee is notified instantly.</p>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-num">2</div>
+                        <h3>Missed clock-out review</h3>
+                        <p>When permitted, review a staff member's self-reported "I actually left at..." submission and approve or reject it — nothing gets silently marked as clocked out on their behalf.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid-detail" style="margin-top:80px;">
+                <div>
+                    <h2 class="section-title">Payroll, Ready for Review</h2>
+                    <p>Once a pay period closes, submit your team's hours to Accounting instead of exporting a spreadsheet by hand.</p>
+                    <div class="step-card">
+                        <div class="step-num">1</div>
+                        <h3>Submit for cross-check</h3>
+                        <p>Review calculated pay per employee, then submit the whole period to Accounting for approval — with permission-gated shift-approval as a step before submission.</p>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-num">2</div>
+                        <h3>Attendance insight for your team</h3>
+                        <p>The same reliability scoring and incident feed Admins see, scoped to just the employees and locations you manage.</p>
+                    </div>
+                </div>
+                <div class="detail-img">
+                    <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&q=80&w=800" alt="Payroll submission review">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-soft">
+        <div class="container">
+            <div class="section-header">
+                <div class="tag">Also Included</div>
+                <h2>What else a Manager can see</h2>
+            </div>
+            <div class="role-grid">
+                <div class="step-card">
+                    <h3>Staff Directory (Scoped)</h3>
+                    <p>Every employee at your assigned locations — contact info, status, and quick access to their schedule and payroll history.</p>
+                </div>
+                <div class="step-card">
+                    <h3>Location Details</h3>
+                    <p>Contact info for the Admin and Accounting person tied to each of your locations, plus attendance and payroll report access.</p>
+                </div>
+                <div class="step-card">
+                    <h3>Open Shifts</h3>
+                    <p>See every forgotten clock-out across your locations and either force-close it or wait on the employee's own submission.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div style="text-align: center; color: var(--text-muted); font-size: 14px;">
+                &copy; 2026 Punchy. All rights reserved.
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
